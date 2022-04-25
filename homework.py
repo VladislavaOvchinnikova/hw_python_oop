@@ -67,7 +67,7 @@ class Running(Training):
         coeff_calorie_2 = 20
         duration_in_min = self.duration * self.MIN_IN_H
         return ((coeff_calorie_1 * self.get_mean_speed()
-                - coeff_calorie_2) * self.weight
+                 - coeff_calorie_2) * self.weight
                 / self.M_IN_KM * duration_in_min)
 
 
